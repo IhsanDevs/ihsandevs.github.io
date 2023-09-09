@@ -73,3 +73,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+      - name: Notify to channel ihsandevs-blog-github-pages
+        # send using curl ntfy.sh
+        run: |
+          curl ntfy.sh \
+          -d '{
+            "topic": "ihsandevs-blog-github-pages",
+            "markdown": true,
+            "priority": 3,
+            "title": "Deploy to GitHub Pages",
+            "message": "Hugo site deployed to GitHub Pages successfully with URL ${{ steps.deployment.outputs.page_url }}",
+            "icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          }'
