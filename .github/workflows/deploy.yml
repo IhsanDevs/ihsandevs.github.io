@@ -80,5 +80,5 @@ jobs:
           --header "Title: Deployed to GitHub Pages" \
           --header 'Tags: partying_face' \
           --header 'Content-Type: text/plain' \
-          # show detail about: commit message, commit url, status action, workflow url, and url page
+          --request POST \
           --data "Deployed to GitHub Pages with detail:\n\nCommit Message: ${{ github.event.head_commit.message }}\nCommit URL: ${{ github.event.head_commit.url }}\nStatus Action: ${{ job.status }}\nWorkflow URL: ${{ github.event.workflow_run.url }}\nURL Page: ${{ steps.deployment.outputs.page_url }}"
