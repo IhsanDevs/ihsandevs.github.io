@@ -74,14 +74,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
       - name: Notify to channel ihsandevs-blog-github-pages
-        # send using curl ntfy.sh
         run: |
-          curl ntfy.sh \
-          -d '{
-            "topic": "ihsandevs-blog-github-pages",
-            "markdown": true,
-            "priority": 3,
-            "title": "Deploy to GitHub Pages",
-            "message": "Hugo site deployed to GitHub Pages successfully with detail:\n- Environment: ${{ steps.deployment.outputs.environment_url }}\n- Deployment ID: ${{ steps.deployment.outputs.deployment_id }}\n- Deployment URL: ${{ steps.deployment.outputs.deployment_url }}\n- Page URL: ${{ steps.deployment.outputs.page_url }}\n- Commit Message: ${{ github.event.head_commit.message }}\n",
-            "icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-          }'
+          curl --location 'ntfy.sh/ihsandevs-blog-github-pages' \
+          --header 'Icon: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' \
+          --header "Title: Deployed to GitHub Pages" \
+          --header 'Tags: partying_face' \
+          --header 'Content-Type: text/plain' \
+          # show detail about: commit message, commit url, status action, workflow url, and url page
+          --data "Deployed to GitHub Pages with detail:\n\nCommit Message: ${{ github.event.head_commit.message }}\nCommit URL: ${{ github.event.head_commit.url }}\nStatus Action: ${{ job.status }}\nWorkflow URL: ${{ github.event.workflow_run.url }}\nURL Page: ${{ steps.deployment.outputs.page_url }}"
