@@ -81,4 +81,18 @@ jobs:
           --header 'Tags: partying_face' \
           --header 'Content-Type: text/plain' \
           --request POST \
-          --data "Deployed to GitHub Pages with detail:\n\nCommit Message: ${{ github.event.head_commit.message }}\nCommit URL: ${{ github.event.head_commit.url }}\nStatus Action: ${{ job.status }}\nWorkflow URL: ${{ github.event.workflow_run.url }}\nURL Page: ${{ steps.deployment.outputs.page_url }}"
+          --data "🤙 Deployed to GitHub Pages with detail:
+
+          📝 Commit Message:
+          ${{ github.event.head_commit.message }}
+
+          🔗 Commit URL:
+          ${{ github.event.head_commit.url }}
+
+          🔗 Workflow URL:
+          ${{ github.event.workflow_run.url }}
+
+          🔗 URL Page:
+          ${{ steps.deployment.outputs.page_url }}
+
+          👀 Status Action: ${{ job.status }}"
