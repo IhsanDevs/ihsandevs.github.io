@@ -58,7 +58,9 @@ params:
   # author: ["Me", "You"] # multiple authors
 
   cover:
-    image: "/image.png"
+    image: "/opengraph.png"
+    relative: true # whether to use relativeURLs for cover image
+
   defaultTheme: dark
   disableThemeToggle: true
   ShowShareButtons: true
