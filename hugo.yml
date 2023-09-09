@@ -57,6 +57,8 @@ params:
   author: Ihsan Devs
   # author: ["Me", "You"] # multiple authors
 
+  cover:
+    image: "/image.png"
   defaultTheme: dark
   disableThemeToggle: true
   ShowShareButtons: true
@@ -68,8 +70,8 @@ params:
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   ShowToc: true
-  # comments: false
-  # images: ["papermod-cover.png"]
+  comments: false
+  images: ["opengraph.png"]
 
   profileMode:
     enabled: false
