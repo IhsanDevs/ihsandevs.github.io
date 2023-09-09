@@ -82,6 +82,11 @@ jobs:
             "markdown": true,
             "priority": 3,
             "title": "Deploy to GitHub Pages",
-            "message": "Hugo site deployed to GitHub Pages successfully with URL ${{ steps.deployment.outputs.page_url }}",
+            "message": "Hugo site deployed to GitHub Pages successfully with detail:\n
+            - **Environment**: ${{ steps.deployment.outputs.environment_url }}\n
+            - **Deployment ID**: ${{ steps.deployment.outputs.deployment_id }}\n
+            - **Deployment URL**: ${{ steps.deployment.outputs.deployment_url }}\n
+            - **Page URL**: ${{ steps.deployment.outputs.page_url }}\n
+            - **Commit Message**: ${{ github.event.head_commit.message }}\n",
             "icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
           }'
