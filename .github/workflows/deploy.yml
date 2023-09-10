@@ -84,7 +84,7 @@ jobs:
           --request POST \
           --data "🤙 Deployed to GitHub Pages for your Hugo blog. Info:
 
-          📝 **Commit Message:**
+          📝 Commit Message:
           ${{ github.event.head_commit.message }}
 
           🔗 Commit URL:

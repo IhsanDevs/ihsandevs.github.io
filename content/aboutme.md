@@ -4,11 +4,11 @@ date: 2023-09-08T23:40:05+07:00
 url: "/about"
 layout: "single"
 disableShare: true
+showToc: false
+comments: false
 ---
 
-# About
-
-![](https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb)
+![](/opengraph.png)
 
 Halo semua! Nama panggilan saya adalah Ihsan Devs, dan saya senang menjadi programmer. Saya sangat tertarik dalam berbagai hal tentang dunia IT dan selalu mencari kesempatan untuk mengeksplorasi lebih dalam. Ada banyak hal yang menarik bagi saya, seperti bahasa pemrograman, tips keamanan, ethical hacking, dan lain-lain. Saya selalu senang mempelajari hal baru dan terus berinovasi di bidang ini.
 

@@ -51,6 +51,7 @@ outputs:
     - JSON
 
 params:
+  disqusShortname: ihsandevs
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: >
     Disini tertuang karya tulis sederhana dari seorang tukang ketik. Kadang bahas cyber security, ethical hacking, programming, dan hal random lainnya.
@@ -72,18 +73,19 @@ params:
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   ShowToc: true
-  comments: false
-  images: ["opengraph.png"]
+  comments: true
+  images: ["/icon-ihsandevs.com.png"]
 
   profileMode:
-    enabled: false
+    enabled: true
     title: Ihsan Devs
-    imageUrl: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+    subtitle: "Disini tertuang karya tulis sederhana dari seorang tukang ketik. Kadang bahas cyber security, ethical hacking, programming, dan hal random lainnya."
+    imageUrl: "/icon-ihsandevs.com.png"
     imageTitle: Ihsan Devs
     imageWidth: 120
     imageHeight: 120
     buttons:
-      - name: Posts
+      - name: Blog
         url: posts
       - name: Search
         url: search
@@ -119,11 +121,11 @@ params:
 
   assets:
     disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
+    favicon: "/icons/favicon.ico"
+    favicon16x16: "/icons/favicon-16x16.png"
+    favicon32x32: "/icons/favicon-32x32.png"
+    apple_touch_icon: "/icons/apple-icon-180x180.png"
+    safari_pinned_tab: "/icons/ms-icon-144x144.png"
 
   # cover:
   #     hidden: true # hide everywhere but not in structured data
