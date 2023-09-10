@@ -77,13 +77,14 @@ jobs:
         run: |
           curl --location 'ntfy.sh/ihsandevs-blog-github-pages' \
           --header 'Icon: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' \
-          --header "Title: Deployed to GitHub Pages" \
+          --header "Title: ${{ github.event.head_commit.message }}" \
           --header 'Tags: partying_face' \
-          --header 'Content-Type: text/plain' \
+          --header 'Priority: 3' \
+          --header 'Content-Type: text/plaintext' \
           --request POST \
           --data "🤙 Deployed to GitHub Pages for your Hugo blog. Info:
 
-          📝 Commit Message:
+          📝 **Commit Message:**
           ${{ github.event.head_commit.message }}
 
           🔗 Commit URL:
