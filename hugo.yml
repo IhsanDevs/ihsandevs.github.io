@@ -80,7 +80,7 @@ params:
     enabled: true
     title: Ihsan Devs
     subtitle: "Disini tertuang karya tulis sederhana dari seorang tukang ketik. Kadang bahas cyber security, ethical hacking, programming, dan hal random lainnya."
-    imageUrl: "/icon-ihsandevs.com.png"
+    imageUrl: "https://ihsandevs.com/icon-ihsandevs.com.png"
     imageTitle: Ihsan Devs
     imageWidth: 120
     imageHeight: 120
@@ -121,11 +121,11 @@ params:
 
   assets:
     disableHLJS: true
-    favicon: "/icons/favicon.ico"
-    favicon16x16: "/icons/favicon-16x16.png"
-    favicon32x32: "/icons/favicon-32x32.png"
-    apple_touch_icon: "/icons/apple-icon-180x180.png"
-    safari_pinned_tab: "/icons/ms-icon-144x144.png"
+    favicon: "https://ihsandevs.com/icons/favicon.ico"
+    favicon16x16: "https://ihsandevs.com/icons/favicon-16x16.png"
+    favicon32x32: "https://ihsandevs.com/icons/favicon-32x32.png"
+    apple_touch_icon: "https://ihsandevs.com/icons/apple-icon-180x180.png"
+    safari_pinned_tab: "https://ihsandevs.com/icons/ms-icon-144x144.png"
 
   # cover:
   #     hidden: true # hide everywhere but not in structured data
