@@ -74,7 +74,7 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowToc: true
   comments: true
-  images: ["/icon-ihsandevs.com.png"]
+  images: ["https://ihsandevs.com/opengraph.png"]
 
   profileMode:
     enabled: true
